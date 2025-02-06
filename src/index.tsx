@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router'; // for using react-router
 import './index.css';
 // import App from './App';
 import App from './App.tsx';
@@ -14,9 +15,9 @@ const rootElement = document.getElementById("root")!;
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
